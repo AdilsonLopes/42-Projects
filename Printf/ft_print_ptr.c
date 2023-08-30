@@ -6,14 +6,15 @@
 /*   By: adlopes- <adlopes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/02 20:22:17 by adlopes-          #+#    #+#             */
-/*   Updated: 2023/06/02 21:14:59 by adlopes-         ###   ########.fr       */
+/*   Updated: 2023/08/18 23:25:57 by adlopes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h> 
 #include "./ft_printf.h"
-#include "./libft.h"
+#include "Libft/libft.h"
 
-int	ft_ptr_len(unsigned int num)
+int	ft_ptr_len(unsigned long int num)
 {
 	int	len;
 
@@ -26,7 +27,7 @@ int	ft_ptr_len(unsigned int num)
 	return (len);
 }
 
-void	ft_put_ptr(unsigned int num)
+void	ft_put_ptr(unsigned long int num)
 {
 	if (num >= 16)
 	{
@@ -42,7 +43,7 @@ void	ft_put_ptr(unsigned int num)
 	}
 }
 
-int	ft_print_ptr(unsigned long long ptr)
+int	ft_print_ptr(unsigned long ptr)
 {
 	int	print_length;
 
@@ -57,3 +58,5 @@ int	ft_print_ptr(unsigned long long ptr)
 	}
 	return (print_length);
 }
+
+

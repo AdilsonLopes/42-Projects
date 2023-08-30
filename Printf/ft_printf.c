@@ -6,7 +6,7 @@
 /*   By: adlopes- <adlopes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/29 19:24:43 by adlopes-          #+#    #+#             */
-/*   Updated: 2023/06/02 21:19:01 by adlopes-         ###   ########.fr       */
+/*   Updated: 2023/08/18 23:26:04 by adlopes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	ft_formats(va_list args, const char format)
 	else if (format == 's')
 		print_length += ft_print_str(va_arg(args, char *));
 	else if (format == 'p')
-		print_length += ft_print_ptr(va_arg(args, unsigned long long));
+		print_length += ft_print_ptr(va_arg(args, unsigned long));
 	else if (format == 'd' || format == 'i')
 		print_length += ft_print_nbr(va_arg(args, int));
 	else if (format == 'u')
@@ -36,7 +36,7 @@ int	ft_formats(va_list args, const char format)
 	else if (format == 'x' || format == 'X')
 		print_length += ft_print_hex(va_arg(args, unsigned int), format);
 	else if (format == '%')
-		print_length += ft_printpercent();
+		print_length += ft_print_percent();
 	return (print_length);
 }
 
@@ -57,7 +57,7 @@ int	ft_printf(const char *format, ...)
 			i++;
 		}
 		else
-			print_length += ft_printchar(format[i]);
+			print_length += ft_print_char(format[i]);
 		i++;
 	}
 	va_end(args);

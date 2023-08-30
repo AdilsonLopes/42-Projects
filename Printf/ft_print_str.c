@@ -6,14 +6,14 @@
 /*   By: adlopes- <adlopes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/02 20:57:09 by adlopes-          #+#    #+#             */
-/*   Updated: 2023/06/02 20:57:34 by adlopes-         ###   ########.fr       */
+/*   Updated: 2023/08/18 19:17:58 by adlopes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./ft_printf.h"
-#include "./libft.h"
+#include "Libft/libft.h"
 
-int	ft_printstr(char *str)
+int	ft_print_str(char *str)
 {
 	int	i;
 

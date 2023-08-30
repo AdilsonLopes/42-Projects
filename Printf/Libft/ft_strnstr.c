@@ -6,7 +6,7 @@
 /*   By: adlopes- <adlopes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 17:34:13 by adlopes-          #+#    #+#             */
-/*   Updated: 2023/05/24 18:17:07 by adlopes-         ###   ########.fr       */
+/*   Updated: 2023/08/18 21:54:13 by adlopes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 			if (need[j] == '\0')
 				return (&hay[i]);
 		}
-			i++;
+		i++;
 	}
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: adlopes- <adlopes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 18:19:48 by adlopes-          #+#    #+#             */
-/*   Updated: 2023/05/26 14:38:04 by adlopes-         ###   ########.fr       */
+/*   Updated: 2023/08/18 21:54:28 by adlopes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ typedef struct s_list
 }				t_list;
 size_t	ft_strlen(const char *s);
 int		ft_atoi(const char *str);
+void	ft_putstr(char *str);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t count, size_t size);
 int		ft_isalnum(int c);

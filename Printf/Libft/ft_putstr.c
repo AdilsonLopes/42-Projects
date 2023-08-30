@@ -1,19 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_char.c                                    :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adlopes- <adlopes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/02 20:22:20 by adlopes-          #+#    #+#             */
-/*   Updated: 2023/08/18 19:51:31 by adlopes-         ###   ########.fr       */
+/*   Created: 2023/08/18 19:59:09 by adlopes-          #+#    #+#             */
+/*   Updated: 2023/08/18 21:52:54 by adlopes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./ft_printf.h"
-#include "Libft/libft.h"
+#include "./libft.h"
 
-int	ft_print_char(char c)
+int	ft_trlen(char *str)
 {
-	return (write(1, &c, 1));
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+		++i;
+	return (i);
+}
+
+void	ft_putstr(char *str)
+{
+	write(1, str, ft_trlen(str));
 }

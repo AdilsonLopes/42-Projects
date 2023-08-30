@@ -6,14 +6,14 @@
 /*   By: adlopes- <adlopes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/02 20:56:43 by adlopes-          #+#    #+#             */
-/*   Updated: 2023/06/02 21:18:06 by adlopes-         ###   ########.fr       */
+/*   Updated: 2023/08/18 19:17:45 by adlopes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./ft_printf.h"
-#include "./libft.h"
+#include "Libft/libft.h"
 
-int	ft_printpercent(void)
+int	ft_print_percent(void)
 {
 	write(1, "%", 1);
 	return (1);

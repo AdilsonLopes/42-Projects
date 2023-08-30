@@ -6,7 +6,7 @@
 /*   By: adlopes- <adlopes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 17:32:36 by adlopes-          #+#    #+#             */
-/*   Updated: 2023/05/24 18:15:07 by adlopes-         ###   ########.fr       */
+/*   Updated: 2023/08/18 21:53:47 by adlopes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		while (i < (dstsize - 1) && src[j] != '\0')
 		{
 			dst[i] = src[j];
-				i++;
-				j++;
+			i++;
+			j++;
 		}
 		dst[i] = '\0';
 	}

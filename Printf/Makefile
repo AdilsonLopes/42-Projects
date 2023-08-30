@@ -6,7 +6,7 @@
 #    By: adlopes- <adlopes-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/02 20:19:07 by adlopes-          #+#    #+#              #
-#    Updated: 2023/06/02 21:43:17 by adlopes-         ###   ########.fr        #
+#    Updated: 2023/08/18 19:55:10 by adlopes-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,14 +18,14 @@ CFLAGS		= -Wall -Werror -Wextra -I
 RM			= rm -f
 AR			= ar rcs
 
-SRC_FILES	=	ft_printf.c ft_print_char.c ft_print_nbr.c ft_print_percent.c ft_print_ptr.c ft_print_unsigned.c ft_print_hex.c
+SRC_FILES	=	ft_printf.c ft_print_char.c ft_print_nbr.c ft_print_percent.c ft_print_ptr.c ft_print_unsig.c ft_print_hex.c ft_print_str.c
 OBJ = ${SRC_FILES:.c=.o}
 
 all:		$(NAME)
 
 $(NAME):	$(OBJ)
 			@make -C $(LIBFT)
-			@cp libft/libft.a .
+			@cp Libft/libft.a .
 			@mv libft.a $(NAME)
 			@$(AR) $(NAME) $(OBJ)
 
