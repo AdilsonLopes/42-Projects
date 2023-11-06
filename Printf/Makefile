@@ -6,7 +6,7 @@
 #    By: adlopes- <adlopes-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/02 20:19:07 by adlopes-          #+#    #+#              #
-#    Updated: 2023/08/18 19:55:10 by adlopes-         ###   ########.fr        #
+#    Updated: 2023/09/11 21:05:16 by adlopes-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,6 +36,7 @@ $(OBJF):
 			@mkdir -p $(OBJ_DIR)
 
 clean:
+			@$(RM) $(OBJ)
 			@$(RM) -rf $(OBJ_DIR)
 			@make clean -C $(LIBFT)
 

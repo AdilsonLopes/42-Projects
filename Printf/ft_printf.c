@@ -6,17 +6,17 @@
 /*   By: adlopes- <adlopes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/29 19:24:43 by adlopes-          #+#    #+#             */
-/*   Updated: 2023/08/18 23:26:04 by adlopes-         ###   ########.fr       */
+/*   Updated: 2023/09/11 19:23:10 by adlopes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_printchar(int c)
-{
-	write(1, &c, 1);
-	return (1);
-}
+//int	ft_printchar(int c)
+//{
+//	write(1, &c, 1);
+//	return (1);
+//}
 
 int	ft_formats(va_list args, const char format)
 {
